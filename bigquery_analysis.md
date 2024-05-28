@@ -47,3 +47,9 @@ a.1) New Table with Imputed Values
 **Query:**
 
 ![Imputed Table](BigQuery-images/Imputed-Data.png)
+
+a.2) Verify New Table
+
+**Query:**
+
+![Verification](BigQuery-images/Verification.png)
