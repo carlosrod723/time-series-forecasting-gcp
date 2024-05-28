@@ -38,16 +38,21 @@ The query results reveal the minimum and maximum values for specific weather ele
 
 A new table named filtered_weather_data_complete was created within the weather_forecast_data dataset. This table was populated by combining data from the ghcnd_2022 and ghcnd_2023 tables of the public ghcn_d dataset. Importantly, the query filtered for only those weather stations (id) that had complete daily records for maximum temperature (TMAX), minimum temperature (TMIN), and precipitation (PRCP) across both 2022 and 2023. This ensures the resulting table contains consistent and reliable data for subsequent analysis and model development.
 
-#### 5. Distribution of Maximum Temperatures
+#### 5. Distribution of Maximum Temperatures (TMAX)
 
 **Query:**
 
+![Query 5](BigQuery-images/Bq-5.png)
 
+The histogram reveals a roughly normal distribution of daily maximum temperatures. The majority of temperatures range between -20°C and 40°C, peaking around 10-20°C. This indicates a moderate climate with seasonal variations. Few extreme values exist outside this range, suggesting potential outliers for further investigation. 
 
-#### 6. Temporal Trends in Maximum Temperatures
+#### 6. Temporal Trends in Maximum Temperatures (TMAX)
 
 **Query:**
 
+![Query 6](BigQuery-images/Bq-6.png)
+
+The line chart displays the average daily maximum temperature (TMAX) across all selected weather stations from March 2022 to November 2023. The data exhibits a clear seasonal pattern, with higher temperatures during the summer months (June-August) and lower temperatures in the winter months (December-February). The peak average maximum temperature is around 27°C in July 2022, and the lowest is around 5°C in January 2023.  There are also some fluctuations within each season, suggesting day-to-day variability in temperature.
 
 #### 7. Date vs Average Max Temperatures Charts
 
