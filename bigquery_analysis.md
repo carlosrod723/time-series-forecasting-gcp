@@ -61,3 +61,21 @@ The table filtered_weather_data_2022_2023 within the weather_forecast_data datas
 ![Query 7](BigQuery-images/Bq-7.png)
 
 The query results display the distribution of daily maximum temperatures (TMAX) in degrees Celsius for the year 2023 across the 12 selected weather stations. This initial exploration of the temperature distribution sets the stage for further analysis and lays the groundwork for our time series forecasting model.
+
+#### 8. Temporal Trends in Maximum Temperatures
+
+**Query:**
+
+![Query 8](BigQuery-images/Bq-8.png)
+
+This analysis is important as it provides insights into the daily temperature variations at a specific location over a short timeframe.
+
+#### 9. Date vs Average Max Temperatures
+
+![Station 1](BigQuery-images/Station-1.png)
+
+![Station 2](BigQuery-images/Station-2.png)
+
+![Station 3](BigQuery-images/Station-3.png)
+
+ASN00084581, and RSM00030710) reveals distinct patterns in average daily maximum temperatures over time. Station USW00094728 (New York) shows a clear seasonal pattern with higher temperatures in the summer and lower in the winter. Station ASN00084581 exhibits a similar seasonal pattern but with overall lower temperatures and a potential cooling trend over time. Station RSM00030710 also displays seasonality, but with a different pattern that might suggest a location in the Southern Hemisphere due to its peak temperatures occurring around December-January. These insights emphasize the importance of considering location and regional climate variations in weather analysis and forecasting.
