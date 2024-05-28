@@ -53,3 +53,9 @@ a.2) Verify New Table
 **Query:**
 
 ![Verification](BigQuery-images/Verification.png)
+
+b) Identify Outliers
+
+**Query:**
+
+![Identify Outliers](BigQuery-images/Identify-Outliers.png)
