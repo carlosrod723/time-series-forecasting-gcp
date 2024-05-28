@@ -10,12 +10,14 @@ To understand the structure and content of the GHCN-Daily dataset, I start with 
 
 **Query**
 
-
+![Query 1](BigQuery-images/Bq-1)
 
 The results showcase various weather elements like wind direction (WDF5), average wind speed (AWND), snowfall (SNOW), and snow depth (SNWD) measured at different dates in 2023. Notably, some elements like snowfall and snow depth have zero values, suggesting no snowfall occurred on those specific dates. The query also includes mflag, qflag, and sflag columns, likely indicating measurement, quality, and source flags respectively, but these columns contain null values in the returned rows
 
 #### 2. Filter for Specific Weather Elements
 
 **Query**
+
+![Query 2](BigQuery-images/Bq-2)
 
 The result is a table sorted by date, where each date appears multiple times with different values corresponding to each weather element. Notably, the temperatures are presented in tenths of degrees Celsius (e.g., 128 represents 12.8 degrees Celsius). The data spans from January 1st to at least January 5th, 2023, and it reveals daily variations in weather conditions. For instance, on January 1st, the maximum temperature reached 12.8 degrees Celsius, while the minimum was 9.4 degrees Celsius, and there was no precipitation recorded. This filtered view provides a clearer understanding of the daily fluctuations in key weather parameters at the Central Park station throughout the early days of 2023.
