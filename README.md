@@ -20,6 +20,8 @@ The objective of this project is to develop a time series forecasting model that
 
 3. ghcnd_stations- This table contains metadata about the weather stations, including their location (latitude and longitude). This will be used to filter the analysis to specific regions or to join with other datasets if needed.
 
+The main focus in these datasets will be TMAX (maximum temperature), TMIN (minimum temperature) and PRCP (precipitation). These three elements are considered fundamental for understanding and predicting weather patterns and influence our daily experiences. TMAX, TMIN, and PRCP are among the most commonly measured and widely available weather variables, which ensures sufficient data for analysis and modeling, and reduces the likelihood of encountering missing or unreliable values.
+
 **Feedforward Neural Network (FNN)**- A simple FNN is the initial machine learning model. FNNs are relatively lightweight and easy to train. They can provide valuable insights and predictions for daily weather patterns.
 
 ### III- Model Justification
