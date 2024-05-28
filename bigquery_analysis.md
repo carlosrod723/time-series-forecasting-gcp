@@ -33,3 +33,11 @@ e) Join with Stations
 **Query:**
 
 ![Join with Station](BigQuery-images/Join-with-Station.png)
+
+#### 2. Data Preprocessing & Cleaning
+
+a) Identify Missing Values
+
+**Query:**
+
+![Missing Values](BigQuery-images/Missing-Values.png)
