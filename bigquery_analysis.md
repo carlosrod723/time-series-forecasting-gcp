@@ -59,3 +59,9 @@ b) Identify Outliers
 **Query:**
 
 ![Identify Outliers](BigQuery-images/Identify-Outliers.png)
+
+c) Create Table with No Outliers
+
+**Query:**
+
+![No Outliers](BigQuery-images/No-Outliers.png)
