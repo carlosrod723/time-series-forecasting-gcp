@@ -30,52 +30,44 @@ The result is a table sorted by date, where each date appears multiple times wit
 
 The query results reveal the minimum and maximum values for specific weather elements (TMAX, TMIN, PRCP) from the ghcnd_2023 table. The minimum temperature (TMIN) -9999.0, which is obviously an error or placeholder value. The maximum temperature (TMAX) is 482.2, which, when converted to Celsius (by dividing by 10), is 48.22 degrees Celsius. This could also be an error. The minimum precipitation (PRCP) is 0.0, which is expected as it represents days with no rain, while the maximum is 2565.4. While it is possible to have such high levels of rainfall in certain regions or during extreme events, it is worth further investigating this high value as a potential outlier.
 
-#### 4. Identify Missing Data
+#### 4. Create Filtered Table 
 
 **Query:**
 
 ![Query 4](BigQuery-images/Bq-4.png)
 
-The query results indicate that, for a selection of stations (identified by id) and the specific weather element of precipitation (PRCP), there are no missing values within the ghcnd_2023 dataset. Each row represents a different station and shows the total number of PRCP records (total_rows) for that station throughout 2023, with the missing_rows column consistently showing 0. This suggests complete data collection for precipitation at these specific stations for the entire year of 2023.
+A new table named filtered_weather_data_complete was created within the weather_forecast_data dataset. This table was populated by combining data from the ghcnd_2022 and ghcnd_2023 tables of the public ghcn_d dataset. Importantly, the query filtered for only those weather stations (id) that had complete daily records for maximum temperature (TMAX), minimum temperature (TMIN), and precipitation (PRCP) across both 2022 and 2023. This ensures the resulting table contains consistent and reliable data for subsequent analysis and model development.
 
-
-
-#### 5. Create Filtered Table 
+#### 5. Distribution of Maximum Temperatures
 
 **Query:**
 
 
 
-#### 6. Distribution of Maximum Temperatures
+#### 6. Temporal Trends in Maximum Temperatures
 
 **Query:**
 
 
-
-#### 7. Temporal Trends in Maximum Temperatures
-
-**Query:**
-
-
-#### 8. Date vs Average Max Temperatures Charts
+#### 7. Date vs Average Max Temperatures Charts
 
 **Query:**
 
 
-#### 9. Distribution of Daily Minimum Temperatures
+#### 8. Distribution of Daily Minimum Temperatures
 
 **Query:**
 
 
  
 
-#### 10. Distribution of Precipitation (PRCP)
+#### 9. Distribution of Precipitation (PRCP)
 
 **Query:**
 
 
 
-#### 11. Temporal Trends in Precipitation (PRCP)
+#### 10. Temporal Trends in Precipitation (PRCP)
 
 **Query:** 
 
