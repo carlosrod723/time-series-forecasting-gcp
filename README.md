@@ -12,7 +12,13 @@ The objective of this project is to develop a time series forecasting model that
 
 **Vertex AI**- This platform will be used for developing, training, and deploying the machine learning model. Vertex AI offers a user-friendly interface and simplifies the entire machine learning workflow.
 
-**GHCN-Daily Dataset**- The Global Historical Climatology Network Daily (GHCN-Daily) dataset from BigQuery's public data project is the primary source of the weather data. This dataset contains daily summaries of weather observations from thousands of stations worldwide.
+**GHCN-Daily Dataset**- The Global Historical Climatology Network Daily (GHCN-Daily) dataset from BigQuery's public data project is the primary source of the weather data. This dataset contains daily summaries of weather observations from thousands of stations worldwide. For the data, I've selected the following tables:
+
+1. ghcnd_2022- This table is useful to get a full year of recent historical data for training the model.
+
+2. ghcnd_2023- This table provides more decent data, which can be used for both training and evaluating model performance on unseen data.
+
+3. ghcnd_stations- This table contains metadata about the weather stations, including their location (latitude and longitude). This will be used to filter the analysis to specific regions or to join with other datasets if needed.
 
 **Feedforward Neural Network (FNN)**- A simple FNN is the initial machine learning model. FNNs are relatively lightweight and easy to train. They can provide valuable insights and predictions for daily weather patterns.
 
