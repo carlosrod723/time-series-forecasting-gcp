@@ -27,3 +27,9 @@ d) Combine data from 2022 and 2023
 **Query:**
 
 ![Combine Data 2022-2023](BigQuery-images/Combined-Data.png)
+
+e) Join with Stations
+
+**Query:**
+
+![Join with Station](BigQuery-images/Join-with-Station.png)
