@@ -22,6 +22,8 @@ The objective of this project is to develop a time series forecasting model that
 
 The main focus in these datasets will be TMAX (maximum temperature), TMIN (minimum temperature) and PRCP (precipitation). These three elements are considered fundamental for understanding and predicting weather patterns and influence our daily experiences. TMAX, TMIN, and PRCP are among the most commonly measured and widely available weather variables, which ensures sufficient data for analysis and modeling, and reduces the likelihood of encountering missing or unreliable values.
 
+It's important to note that the GHCN-Daily dataset stores temperature values in tenths of degrees Celsius. So for example, a value of -319.0 actually represents -31.9 degrees Celsius.
+
 **Feedforward Neural Network (FNN)**- A simple FNN is the initial machine learning model. FNNs are relatively lightweight and easy to train. They can provide valuable insights and predictions for daily weather patterns.
 
 ### III- Model Justification
