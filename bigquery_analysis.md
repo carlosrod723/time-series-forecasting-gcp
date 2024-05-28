@@ -70,7 +70,9 @@ The query results display the distribution of daily maximum temperatures (TMAX) 
 
 This analysis is important as it provides insights into the daily temperature variations at a specific location over a short timeframe.
 
-#### 9. Date vs Average Max Temperatures
+#### 9. Date vs Average Max Temperatures Charts
+
+**Query:**
 
 ![Station 1](BigQuery-images/Station-1.png)
 
@@ -79,3 +81,11 @@ This analysis is important as it provides insights into the daily temperature va
 ![Station 3](BigQuery-images/Station-3.png)
 
 ASN00084581, and RSM00030710) reveals distinct patterns in average daily maximum temperatures over time. Station USW00094728 (New York) shows a clear seasonal pattern with higher temperatures in the summer and lower in the winter. Station ASN00084581 exhibits a similar seasonal pattern but with overall lower temperatures and a potential cooling trend over time. Station RSM00030710 also displays seasonality, but with a different pattern that might suggest a location in the Southern Hemisphere due to its peak temperatures occurring around December-January. These insights emphasize the importance of considering location and regional climate variations in weather analysis and forecasting.
+
+#### 10. Distribution of Daily Minimum Temperatures
+
+**Query:**
+
+![Distribution Min Temp](BigQuery-images/Min-Temp-Bar.png)
+
+The histogram illustrates the distribution of daily minimum temperatures (TMIN) in degrees Celsius across the 12 selected weather stations for the year 2023. The x-axis represents the temperature values, and the y-axis represents the frequency of those values. The minimum temperatures range from approximately -10°C to 30°C. The distribution appears to be roughly bell-shaped (normal), with the majority of temperatures clustering between 0°C and 20°C. Many time series forecasting models assume that the underlying data follows a normal distribution. So, confirming this approximately normal distribution supports the use of the chosen model. 
