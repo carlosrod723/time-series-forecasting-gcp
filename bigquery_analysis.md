@@ -59,3 +59,5 @@ The table filtered_weather_data_2022_2023 within the weather_forecast_data datas
 **Query:**
 
 ![Query 7](BigQuery-images/Bq-7.png)
+
+The query results display the distribution of daily maximum temperatures (TMAX) in degrees Celsius for the year 2023 across the 12 selected weather stations. This initial exploration of the temperature distribution sets the stage for further analysis and lays the groundwork for our time series forecasting model.
