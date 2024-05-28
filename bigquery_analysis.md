@@ -89,3 +89,11 @@ ASN00084581, and RSM00030710) reveals distinct patterns in average daily maximum
 ![Distribution Min Temp](BigQuery-images/Min-Temp-Bar.png)
 
 The histogram illustrates the distribution of daily minimum temperatures (TMIN) in degrees Celsius across the 12 selected weather stations for the year 2023. The x-axis represents the temperature values, and the y-axis represents the frequency of those values. The minimum temperatures range from approximately -10°C to 30°C. The distribution appears to be roughly bell-shaped (normal), with the majority of temperatures clustering between 0°C and 20°C. Many time series forecasting models assume that the underlying data follows a normal distribution. So, confirming this approximately normal distribution supports the use of the chosen model. 
+
+#### 11. Distribution of Precipitation (PRCP)
+
+**Query:**
+
+![PRCP Dist](BigQuery-images/PRCP-Dist.png)
+
+This analysis is important for understanding the typical precipitation patterns across the selected stations. It highlights the dominance of low precipitation days, which is valuable information for our forecasting model. The long tail of the distribution, with rare but significant precipitation events, suggests that our model needs to be able to capture both the common dry days and the occasional extreme rainfall.
