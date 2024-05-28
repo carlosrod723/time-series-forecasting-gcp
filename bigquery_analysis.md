@@ -37,3 +37,17 @@ The query results reveal the minimum and maximum values for specific weather ele
 ![Query 4](BigQuery-images/Bq-4.png)
 
 The query results indicate that, for a selection of stations (identified by id) and the specific weather element of precipitation (PRCP), there are no missing values within the ghcnd_2023 dataset. Each row represents a different station and shows the total number of PRCP records (total_rows) for that station throughout 2023, with the missing_rows column consistently showing 0. This suggests complete data collection for precipitation at these specific stations for the entire year of 2023.
+
+#### 5. Check Station Overlap
+
+**Query:**
+
+![Query 5](BigQuery-images/Bq-5.png)
+
+The query successfully identifies 12 weather stations that have data for the maximum temperature (TMAX), minimum temperature (TMIN), and precipitation (PRCP) in both 2022 and 2023. The station IDs are listed in the id column. This information can be used to refine future queries, ensuring that data from both years is available for analysis and model training.
+
+#### 6. Create Filtered Table 
+
+**Query:**
+
+![Query 6](BigQuery-images/Bq-6.png)
