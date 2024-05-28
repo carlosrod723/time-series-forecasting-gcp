@@ -8,4 +8,4 @@ a) 2022 Table
 
 **Query:**
 
-![2022 Table](BigQuery-images/Table-1/png)
+![2022 Table](BigQuery-images/Table-1.png)
