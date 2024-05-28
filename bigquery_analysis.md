@@ -41,3 +41,9 @@ a) Identify Missing Values
 **Query:**
 
 ![Missing Values](BigQuery-images/Missing-Values.png)
+
+a.1) New Table with Imputed Values
+
+**Query:**
+
+![Imputed Table](BigQuery-images/Imputed-Data.png)
