@@ -51,3 +51,11 @@ The query successfully identifies 12 weather stations that have data for the max
 **Query:**
 
 ![Query 6](BigQuery-images/Bq-6.png)
+
+The table filtered_weather_data_2022_2023 within the weather_forecast_data dataset has been successfully created. This table consolidates daily weather observations from 12 stations across 2022 and 2023. The data is sourced from the ghcnd_2022 and ghcnd_2023 tables of the ghcn_d public dataset, filtering for stations with complete records for maximum temperature (TMAX), minimum temperature (TMIN), and precipitation (PRCP). This filtered table will serve as the foundation for subsequent data analysis, feature engineering, and model development.
+
+#### 7. Distribution of Maximum Temperatures
+
+**Query:**
+
+![Query 7](BigQuery-images/Bq-7.png)
