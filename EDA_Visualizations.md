@@ -36,9 +36,9 @@ The data shows fluctuations with frequent peaks, indicating days of significant 
 
 **Query:**
 
-![Monthly Avg](BigQuery-images/Month-TMAX-Query.png)
+![Monthly Avg](BigQuery-images/TMAX-Month-Query.png)
 
-![Month Chart](BigQuery-images/Month-TMAX-Chart.png)
+![Month Chart](BigQuery-images/TMAX-Month-Chart.png)
 
 Temperatures steadily rise from January, peaking during the summer months of July and August, and then gradually decrease towards October. This pattern aligns with typical seasonal variations, where the summer months exhibit the highest temperatures and the winter months the lowest. The data highlights the expected temperature fluctuations over the course of the year, providing valuable insights for forecasting and planning purposes.
 
