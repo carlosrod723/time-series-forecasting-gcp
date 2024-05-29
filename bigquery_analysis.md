@@ -60,8 +60,14 @@ b) Identify Outliers
 
 ![Identify Outliers](BigQuery-images/Identify-Outliers.png)
 
-c) Table with Capped Data at 5 Standard Deviations
+b.1) Table with Capped Data at 5 Standard Deviations
 
 **Query:**
 
 ![Capped 5 STD](BigQuery-images/Capped-Data.png)
+
+c) Transform Temperature Values From 10th's of Degree Celsius to Degree Celsius
+
+**Query:**
+
+![Transform Data](BigQuery/images/Transform-Data.png)
