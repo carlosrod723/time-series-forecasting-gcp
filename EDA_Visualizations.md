@@ -31,3 +31,21 @@ The chart of the Daily Average Minimum Temperature (TMIN) exhibits clear seasona
 ![Daily Total PRCP](BigQuery-images/Total-PRCP-Chart.png)
 
 The data shows fluctuations with frequent peaks, indicating days of significant rainfall interspersed with periods of lower precipitation. This pattern underscores the episodic nature of precipitation, which is essential for understanding and predicting weather conditions.
+
+#### 4. Monthly Average Maximum Temperature (TMAX)
+
+**Query:**
+
+![Monthly Avg](BigQuery-images/Month-TMAX-Query.png)
+
+![Month Chart](BigQuery-images/Month-TMAX-Chart.png)
+
+Temperatures steadily rise from January, peaking during the summer months of July and August, and then gradually decrease towards October. This pattern aligns with typical seasonal variations, where the summer months exhibit the highest temperatures and the winter months the lowest. The data highlights the expected temperature fluctuations over the course of the year, providing valuable insights for forecasting and planning purposes.
+
+#### 5. Monthly Average Minimum Temperature (TMIN)
+
+**Query:**
+
+![Monthly Min](BigQuery-images/Month-TMIN-Query.png)
+
+![Month Min Chart](BigQuery-images/Month-TMIN-Chart.png)
