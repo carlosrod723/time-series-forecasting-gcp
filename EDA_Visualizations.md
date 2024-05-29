@@ -1,6 +1,6 @@
 ## Exploratory Data Analysis Visualizations
 
-In this part, I will utilize Looker Studio to create visualizations from the weather data stored in BigQuery. Looker Studio provides a powerful interface for transforming raw data into insightful charts and graphs, making it easier to identify trends and patterns. 
+In this part, I will utilize Looker Studio, BiqQuery and Python Notebooks to create visualizations from the weather data stored in BigQuery. These tools provide a powerful interface for transforming raw data into insightful charts and graphs, making it easier to identify trends and patterns. 
 
 #### 1. Average Max Temperature (Tmax) by Date
 
@@ -49,3 +49,36 @@ Temperatures steadily rise from January, peaking during the summer months of Jul
 ![Monthly Min](BigQuery-images/Month-TMIN-Query.png)
 
 ![Month Min Chart](BigQuery-images/Month-TMIN-Chart.png)
+
+The data shows a clear seasonal pattern, with the highest average minimum temperatures occurring in July and August, and the lowest in January and December. This trend indicates the expected temperature fluctuations across the year, with warmer summer months and colder winter months. This visualization helps understand the seasonal temperature variations.
+
+#### 6. Monthly Total Precipitation (PRCP)
+
+**Query:**
+
+![Monthly PRCP](BigQuery-images/PRCP-Total-Query.png)
+
+![Monthly PRCP](BigQuery-images/PRCP-Total-Chart.png)
+
+Notably, the chart reveals that precipitation levels are relatively consistent throughout the year, with peaks in July and December. The lowest precipitation is observed in February.
+
+#### 7. Correlation Matrix of TMAX, TMIN & PRCP
+
+**Python Code:**
+
+![CM Var](BigQuery-images/CM-Var.png)
+
+![CM Chart](BigQuery-images/CM-Chart.png)
+
+PRCP shows almost no correlation with either TMAX (0.00) or TMIN (0.05), suggesting that precipitation levels do not significantly influence temperature extremes in this dataset.
+
+#### 8. Distribution of Variables- TMAX, TMIN & PRCP
+
+**Python Code:**
+
+![Dist Var](BigQuery-images/Dist-Code.png)
+
+![Dist Chart](BigQuery-images/Dist-Chart.png)
+
+The distribution plots of TMAX, TMIN, and PRCP show distinct patterns in the data. TMAX (maximum temperature) and TMIN (minimum temperature) have narrow distributions centered around their respective means, indicating consistent temperature ranges with few extreme values. PRCP (precipitation) has a skewed distribution with a long tail, suggesting that most days have low precipitation, but there are occasional days with very high rainfall. These distributions highlight the relative stability in temperature data and the variability in precipitation.
+
