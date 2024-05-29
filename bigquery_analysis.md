@@ -60,8 +60,8 @@ b) Identify Outliers
 
 ![Identify Outliers](BigQuery-images/Identify-Outliers.png)
 
-c) Create Table with No Outliers
+c) Table with Capped Data at 5 Standard Deviations
 
 **Query:**
 
-![No Outliers](BigQuery-images/No-Outliers.png)
+![Capped 5 STD](BigQuery-images/Capped-Data.png)
