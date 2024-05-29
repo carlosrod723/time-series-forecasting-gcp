@@ -70,4 +70,4 @@ c) Transform Temperature Values From 10th's of Degree Celsius to Degree Celsius
 
 **Query:**
 
-![Transform Data](BigQuery/images/Transformed-Data.png)
+![Transform Data](BigQuery-images/Transformed-Data.png)
