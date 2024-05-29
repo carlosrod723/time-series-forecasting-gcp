@@ -20,4 +20,14 @@ This cyclical trend highlights the predictable nature of temperature variations,
 
 ![Avg Min Chart](BigQuery-images/Avg-Min-Chart.png)
 
-The chart of the Daily Average Minimum Temperature (TMIN) exhibits clear seasonal trends similar to those observed in the maximum temperature chart. Minimum temperatures rise gradually from late winter to peak during the summer months and then decline as winter approaches. These cyclical patterns highlight the predictability of seasonal temperature changes, which is essential for developing robust weather forecasting models. The consistent troughs and peaks underscore the importance of incorporating seasonal variables in predictive analytics to improve the accuracy of forecasts
+The chart of the Daily Average Minimum Temperature (TMIN) exhibits clear seasonal trends similar to those observed in the maximum temperature chart. Minimum temperatures rise gradually from late winter to peak during the summer months and then decline as winter approaches. These cyclical patterns highlight the predictability of seasonal temperature changes, which is essential for developing robust weather forecasting models. The consistent troughs and peaks underscore the importance of incorporating seasonal variables in predictive analytics to improve the accuracy of forecasts.
+
+#### 3. Daily Total Precipitation (PRCP) by Date
+
+**Query:**
+
+![Daily Total PRCP](BigQuery-images/Total-PRCP-Query.png)
+
+![Daily Total PRCP](BigQuery-images/Total-PRCP-Chart.png)
+
+The data shows fluctuations with frequent peaks, indicating days of significant rainfall interspersed with periods of lower precipitation. This pattern underscores the episodic nature of precipitation, which is essential for understanding and predicting weather conditions.
