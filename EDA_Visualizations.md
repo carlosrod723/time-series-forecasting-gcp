@@ -11,3 +11,13 @@ In this part, I will utilize Looker Studio to create visualizations from the wea
 ![Avg Max Chart](BigQuery-images/Avg-Max-Temp.png)
 
 This cyclical trend highlights the predictable nature of temperature variations, which are crucial for developing accurate weather forecasting models. The data shows a clear increase in temperatures starting from late winter, reaching a peak in mid-summer, followed by a gradual decline as winter approaches again.
+
+#### 2. Daily Average Minimum Temperature (TMIN)
+
+**Query:**
+
+![Avg Min Temp](BigQuery-images/Avg-Min-Query.png)
+
+![Avg Min Chart](BigQuery-images/Avg-Min-Chart.png)
+
+The chart of the Daily Average Minimum Temperature (TMIN) exhibits clear seasonal trends similar to those observed in the maximum temperature chart. Minimum temperatures rise gradually from late winter to peak during the summer months and then decline as winter approaches. These cyclical patterns highlight the predictability of seasonal temperature changes, which is essential for developing robust weather forecasting models. The consistent troughs and peaks underscore the importance of incorporating seasonal variables in predictive analytics to improve the accuracy of forecasts
