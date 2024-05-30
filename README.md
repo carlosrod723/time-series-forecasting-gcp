@@ -66,7 +66,7 @@ By enriching the dataset with these engineered features, I have provided the fee
 
 For the Python code implementation of feature engineering and subsequent model development, please refer to the 'weather_model(3).ipynb' file.
 
-### VII- Building the FreeForward Neural Network Model
+### VII- Building the FeedForward Neural Network Model
 
 Having engineered informative features, the next step involved building the model. To align with my goal of simplicity due to limited computational resources, a feedforward neural network was chosen as the modeling approach.
 
