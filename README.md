@@ -90,4 +90,14 @@ The verbose parameter was set to 1, which controls the level of information disp
 
 For a detailed implementation of the model training process and the code, please refer to the 'weather_model(3).ipynb' notebook file.
 
-### IX- 
+### IX- Model Evaluation (Mean Absolute Error)
+
+Following the training phase, the model's performance was evaluated using the model.evaluate function, which calculates the loss (mean squared error in this case) and mean absolute error (MAE) on the held-out test set. However, in this case, the focus is on the mae value, which is a more interpretable metric for regression problems.  The verbose=0 setting suppresses the output of detailed evaluation results during this process.
+
+The Mean Absolute Error (MAE) is a widely used metric that measures the average magnitude of the errors in a set of predictions, without considering their direction. It calculates the absolute difference between the predicted and actual values and then takes the mean of those differences. A lower MAE value indicates better performance, as it means the predictions are closer to the actual values on average.
+
+The mean absolute error (MAE) of 1.7628 provides valuable insight into the model's predictive accuracy. It signifies that, on average, the model's predictions for maximum temperature (TMAX) deviate from the actual values by approximately 1.76 degrees Celsius. In the context of weather forecasting, an MAE of 1.76 can be considered reasonable, as weather patterns can be inherently complex and subject to various external influences.
+
+The feedforward neural network, despite its simplicity and limited computational resources, demonstrated a satisfactory ability to predict maximum temperatures based on minimum temperature and precipitation data. This suggests that the chosen architecture, activation functions, optimizer, and loss function were appropriate for capturing the underlying relationships in the data.
+
+For further analysis, code and a more in-depth examination of the model's performance, please refer to the 'weather_model(3).ipynb' notebook file.
