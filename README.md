@@ -40,7 +40,7 @@ Finally, temperature values, originally recorded in tenths of a degree Celsius, 
 
 For a detailed walkthrough of the data cleaning and preprocessing steps, including the BigQuery code used, please refer to the 'bigquery_analysis.md' file.
 
-### V- Exploratory Data Analysis Visualizations
+### V- Exploratory Data Analysis: Visualizations
 
 Leveraging the capabilities of Looker Studio, BigQuery charts, and Python Notebooks, a comprehensive exploratory data analysis (EDA) was conducted on the weather data stored in BigQuery. The resulting visualizations unveiled key insights into temperature and precipitation patterns.
 
@@ -50,6 +50,18 @@ These findings underscore the importance of incorporating seasonal variables and
 
 For a deeper dive into the code, visualizations, and detailed analysis of each chart, please refer to the 'EDA_visualizations.md' file.
 
-### VI- 
+### VI- Feature Engineering
 
+Feature engineering, a critical step in enhancing machine learning models, involves transforming raw data into more informative features that better capture underlying patterns.  This process aims to improve the model's ability to learn and make predictions. In the context of the weather forecasting project, feature engineering was employed to extract relevant information from the datetime data and create features that capture temporal dependencies in the data.
 
+First, the 'date' column was converted to a datetime format to enable easy extraction of year, month, day, and day of the week. These features provide valuable information about seasonal and weekly patterns in weather conditions.
+
+Next, rolling mean features were calculated for tmax (maximum temperature), tmin (minimum temperature), and prcp (precipitation) using 7-day and 30-day windows. These features capture short-term and medium-term trends in the data, smoothing out daily fluctuations and highlighting broader patterns.
+
+Lag features were also created by shifting the values of tmax, tmin, and prcp by 1 and 7 days. These features allow the model to consider past weather conditions when making predictions, incorporating the temporal dependencies inherent in weather data.
+
+Finally, any missing values introduced by the rolling and lag features were filled using a combination of forward-fill and backward-fill methods. This ensures that the dataset is complete and ready for model training.
+
+By enriching the dataset with these engineered features, I have provided the feedforward neural network with a more comprehensive view of the weather data, enabling it to learn and generalize better, ultimately leading to more accurate predictions.
+
+For the Python code implementation of feature engineering and subsequent model development, please refer to the 'weather_model(3).ipynb' file.
