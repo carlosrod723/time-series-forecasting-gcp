@@ -102,4 +102,20 @@ The feedforward neural network, despite its simplicity and limited computational
 
 For further analysis, code and a more in-depth examination of the model's performance, please refer to the 'weather_model(3).ipynb' notebook file.
 
-### X. 
+### X. Saving and Uploading Model to Google Cloud Storage: Preparing for Deployment
+
+To facilitate deployment and ensure accessibility, the trained weather prediction model was saved locally and then uploaded to Google Cloud Storage (GCS).  A GCS bucket named 'weather-model-bucket' was created to store the model artifacts. This bucket acts as a centralized repository for the model, allowing for easy versioning and access from various environments.
+
+The upload_to_gcs function was defined to streamline the process of uploading the saved model directory to the GCS bucket. This function iterates through the local directory structure, uploads each file individually as a blob (object) in GCS, and maintains the same directory hierarchy within the bucket. This organized structure ensures that the model can be loaded and used seamlessly in a deployment environment (Vertex AI).
+
+Before uploading, appropriate permissions were set on the GCS bucket to control access and ensure data security. This step is crucial to prevent unauthorized access or modification of the model. By leveraging Google Cloud Storage, the model becomes readily available for deployment, enabling the seamless integration of weather predictions into applications and services.
+
+To review the specific code implementation for saving and uploading the model to Google Cloud Storage, please refer to the 'weather_model(3).ipynb' notebook file.
+
+### XI. Model Deployment in Vertex AI
+
+Vertex AI, Google Cloud's comprehensive machine learning platform, streamlines the entire model development and deployment lifecycle. It provides a unified environment for building, training, and deploying machine learning models at scale.  In this project, after saving the trained weather forecasting model, I utilized Vertex AI to deploy the model as an endpoint for real-time predictions. This involved uploading the model artifacts to Vertex AI, defining the necessary configurations, and initiating the deployment process.
+
+As indicated in the image, the model "WeatherModelEndpoint" has been successfully deployed and is now active on Vertex AI.  This signifies that the model is accessible for generating weather predictions, enabling its integration into various applications and services.
+
+![Model Deployed](BigQuery-images/Model-Deployed.png)
