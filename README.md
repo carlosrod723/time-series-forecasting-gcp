@@ -101,3 +101,5 @@ The mean absolute error (MAE) of 1.7628 provides valuable insight into the model
 The feedforward neural network, despite its simplicity and limited computational resources, demonstrated a satisfactory ability to predict maximum temperatures based on minimum temperature and precipitation data. This suggests that the chosen architecture, activation functions, optimizer, and loss function were appropriate for capturing the underlying relationships in the data.
 
 For further analysis, code and a more in-depth examination of the model's performance, please refer to the 'weather_model(3).ipynb' notebook file.
+
+### X. 
