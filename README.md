@@ -65,3 +65,29 @@ Finally, any missing values introduced by the rolling and lag features were fill
 By enriching the dataset with these engineered features, I have provided the feedforward neural network with a more comprehensive view of the weather data, enabling it to learn and generalize better, ultimately leading to more accurate predictions.
 
 For the Python code implementation of feature engineering and subsequent model development, please refer to the 'weather_model(3).ipynb' file.
+
+### VII- Building the FreeForward Neural Network Model
+
+Having engineered informative features, the next step involved building the model. To align with my goal of simplicity due to limited computational resources, a feedforward neural network was chosen as the modeling approach.
+
+The relevant features for prediction, namely tmin (minimum temperature) and prcp (precipitation), were designated as input variables (X), while tmax (maximum temperature) was identified as the target variable (y). The dataset was then split into training and testing sets, with 80% of the data allocated for training and the remaining 20% reserved for evaluating the model's performance on unseen data.
+
+The neural network architecture comprises an input layer with 32 neurons (Dense 32), followed by two hidden layers with 16 neurons each (Dense 16), and finally, an output layer with a single neuron (Dense 1) representing the predicted maximum temperature. The rectified linear unit (ReLU) activation function, known for its computational efficiency and ability to mitigate the vanishing gradient problem, was employed in the hidden layers. ReLU's non-linearity allows the model to capture complex relationships within the data.
+
+The Adam optimizer, an adaptive learning rate optimization algorithm, was selected to update the model's weights during training. Adam dynamically adjusts the learning rate for each parameter, leading to faster convergence and potentially better performance. The mean squared error (MSE) loss function was chosen to measure the discrepancy between predicted and actual maximum temperatures. MSE penalizes larger errors more heavily, encouraging the model to prioritize accuracy.
+
+The mean absolute error (MAE) metric was included to provide an interpretable measure of the average magnitude of prediction errors. MAE calculates the average absolute difference between predicted and actual values, offering a straightforward assessment of model performance.
+
+For a detailed implementation of the model building process and the code, please refer to the 'weather_model(3).ipynb' notebook file.
+
+### VIII- Training the FFN Model
+
+To train the feedforward neural network, I employed the model.fit function, specifying key parameters to guide the learning process. The epochs parameter was set to 10, indicating that the model would iterate over the entire training dataset 10 times (opting for simplicity). While a higher number of epochs could potentially lead to better performance, it also increases the risk of overfitting, where the model becomes too specialized to the training data and performs poorly on unseen data. Ten epochs were chosen as a reasonable starting point, balancing the need for learning with the risk of overfitting.
+
+The validation_split parameter was set to 0.2, meaning that 20% of the training data was reserved for validation during each epoch. This validation set serves as a proxy for unseen data, allowing us to monitor the model's performance and generalization ability during training.  The 0.2 split provides a sufficient amount of data for validation while leaving enough data for training the model effectively.
+
+The verbose parameter was set to 1, which controls the level of information displayed during training. A value of 1 indicates that progress bars will be shown for each epoch, providing real-time feedback on the training process. While verbose settings don't directly impact the model's performance, they are helpful for monitoring and debugging during development.
+
+For a detailed implementation of the model training process and the code, please refer to the 'weather_model(3).ipynb' notebook file.
+
+### IX- 
