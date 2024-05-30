@@ -28,5 +28,18 @@ It's important to note that the GHCN-Daily dataset stores temperature values in 
 
 A simple Feedforward Neural Network (FNN) is the chosen machine learning model, which are relatively lightweight and easy to train. They can provide valuable insights and predictions for daily weather patterns. Feedforward Neural Networks (FNNs) are an excellent choice for the time series forecasting project due to their ability to efficiently model complex relationships between input features and predicted weather variables. Their layered structure enables them to learn hierarchical representations of the data, capturing underlying patterns that drive weather dynamics. By adjusting the weights and biases of the connections between neurons, FNNs can adapt to the specific characteristics of the dataset, making them a flexible and powerful tool for predicting daily weather conditions. While they may not explicitly model temporal dependencies, FNNs can still be highly effective for forecasting tasks when combined with appropriate feature engineering and preprocessing techniques that incorporate temporal information.
 
-### IV- Data Cleaning
+### IV- Preparing Data for Analysis
+
+To prepare the weather data for analysis, a comprehensive cleaning and preprocessing pipeline was implemented in BigQuery.  First, weather observations from 2022 and 2023 were consolidated and joined with station metadata, ensuring a complete dataset for model training and evaluation.
+
+Missing values, a common challenge in real-world data, were addressed through imputation. This strategy involves replacing missing data points with estimated values based on existing patterns in the data, preserving the overall integrity of the dataset and preventing potential biases that could arise from simply discarding incomplete records. 
+
+Outliers, data points that significantly deviate from the norm, were identified using a threshold of three standard deviations from the mean. However, the initial identification revealed a substantial number of outliers, suggesting that a more flexible approach was warranted. To strike a balance between outlier removal and data retention, a refined table was created where values exceeding five standard deviations were capped. This strategy mitigates the influence of extreme outliers while retaining valuable information contained within the dataset.
+
+Finally, temperature values, originally recorded in tenths of a degree Celsius, were transformed to the standard degree Celsius unit. This standardization ensures consistency and simplifies subsequent analysis and interpretation of the data.
+
+For a detailed walkthrough of the data cleaning and preprocessing steps, including the BigQuery code used, please refer to the 'bigquery_analysis.md' file.
+
+### V- Exploratory Data Analysis Visualizations
+
 
