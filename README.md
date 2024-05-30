@@ -2,7 +2,7 @@
 
 ### I- Business Objective
 
-The objective of this project is to develop a time series forecasting model that can accurately predict daily weather conditions (e.g., temperature, precipitation) based on historical data. The ability to forecast weather patterns has numerous applications, such as optimizing energy consumption, planning agricultural activities, and preparing for extreme weather events.
+The objective of this project is to develop a time series forecasting model that can accurately predict daily weather conditions (e.g., temperature, precipitation) based on historical data. Accurate weather forecasting is a cornerstone of numerous industries, impacting decision-making processes throughout the global economy. For example, Transportation and logistics industries rely on accurate predictions to plan routes, avoid disruptions, and ensure the safety of both cargo and passengers. By developing a robust time series forecasting model for daily weather conditions, this project aims to provide a valuable tool that can be applied across these diverse sectors.
 
 ### II- Methods:
 
@@ -10,9 +10,9 @@ The objective of this project is to develop a time series forecasting model that
 
 **BigQuery**- I will leverage BigQuery for storing, managing, and preprocessing weather data. BigQuery's powerful SQL-like query language and ability to handle large datasets make it ideal for data wrangling tasks.
 
-**Vertex AI**- This platform will be used for developing, training, and deploying the machine learning model. Vertex AI offers a user-friendly interface and simplifies the entire machine learning workflow.
+**Vertex AI**- This platform will be used for deploying the machine learning model. Vertex AI offers a user-friendly interface and simplifies the entire machine learning workflow.
 
-**GHCN-Daily Dataset**- The Global Historical Climatology Network Daily (GHCN-Daily) dataset from BigQuery's public data project is the primary source of the weather data. This dataset contains daily summaries of weather observations from thousands of stations worldwide. For the data, I've selected the following tables:
+**GHCN-Daily Dataset**- The Global Historical Climatology Network Daily (GHCN-Daily) dataset from BigQuery's public data is the primary source of the weather data. This dataset contains daily summaries of weather observations from thousands of stations worldwide. For the data, I've selected the following tables:
 
 1. ghcnd_2022- This table is useful to get a full year of recent historical data for training the model.
 
@@ -24,8 +24,9 @@ The main focus in these datasets will be TMAX (maximum temperature), TMIN (minim
 
 It's important to note that the GHCN-Daily dataset stores temperature values in tenths of degrees Celsius. So for example, a value of -319.0 actually represents -31.9 degrees Celsius.
 
-**Feedforward Neural Network (FNN)**- A simple FNN is the initial machine learning model. FNNs are relatively lightweight and easy to train. They can provide valuable insights and predictions for daily weather patterns.
+### III- Model Selection- Feedforward Neural Network
 
-### III- Model Justification
+A simple Feedforward Neural Network (FNN) is the chosen machine learning model, which are relatively lightweight and easy to train. They can provide valuable insights and predictions for daily weather patterns. Feedforward Neural Networks (FNNs) are an excellent choice for the time series forecasting project due to their ability to efficiently model complex relationships between input features and predicted weather variables. Their layered structure enables them to learn hierarchical representations of the data, capturing underlying patterns that drive weather dynamics. By adjusting the weights and biases of the connections between neurons, FNNs can adapt to the specific characteristics of the dataset, making them a flexible and powerful tool for predicting daily weather conditions. While they may not explicitly model temporal dependencies, FNNs can still be highly effective for forecasting tasks when combined with appropriate feature engineering and preprocessing techniques that incorporate temporal information.
 
-Feedforward Neural Networks (FNNs) are an excellent choice for the time series forecasting project due to their ability to efficiently model complex relationships between input features and predicted weather variables. Their layered structure enables them to learn hierarchical representations of the data, capturing underlying patterns that drive weather dynamics. By adjusting the weights and biases of the connections between neurons, FNNs can adapt to the specific characteristics of the dataset, making them a flexible and powerful tool for predicting daily weather conditions. While they may not explicitly model temporal dependencies, FNNs can still be highly effective for forecasting tasks when combined with appropriate feature engineering and preprocessing techniques that incorporate temporal information.
+### IV- Data Cleaning
+
