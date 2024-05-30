@@ -118,4 +118,16 @@ Vertex AI, Google Cloud's comprehensive machine learning platform, streamlines t
 
 As indicated in the image, the model "WeatherModelEndpoint" has been successfully deployed and is now active on Vertex AI.  This signifies that the model is accessible for generating weather predictions, enabling its integration into various applications and services.
 
+**Bucket created for the model:**
+
+![Model Bucket](BigQuery-images/Model-Bucket.png)
+
+**Endpoint 'WeatherModelEndpoint' was successfully created:**
+
 ![Model Deployed](BigQuery-images/Deployed-Model.png)
+
+### XII- Final Thoughts
+
+In conclusion, this project successfully developed a time-series forecasting model to predict daily maximum temperatures using a feedforward neural network.  Through meticulous data cleaning, thoughtful feature engineering, and careful model selection and training, we were able to achieve a mean absolute error of 1.76 degrees Celsius on the test set. While there's always room for improvement, this model demonstrates the potential of machine learning in weather forecasting, even with limited computational resources.  By deploying the model on Vertex AI, we have made it accessible for real-time predictions, paving the way for its integration into various applications and services.
+
+Future work could explore more complex models, incorporate additional features, and fine-tune hyperparameters to further enhance predictive accuracy.  Overall, this project serves as a practical demonstration of the end-to-end machine learning workflow, from data preprocessing to model deployment, and highlights the value of weather forecasting in diverse industries.
