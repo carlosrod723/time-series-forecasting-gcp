@@ -42,4 +42,14 @@ For a detailed walkthrough of the data cleaning and preprocessing steps, includi
 
 ### V- Exploratory Data Analysis Visualizations
 
+Leveraging the capabilities of Looker Studio, BigQuery charts, and Python Notebooks, a comprehensive exploratory data analysis (EDA) was conducted on the weather data stored in BigQuery. The resulting visualizations unveiled key insights into temperature and precipitation patterns.
+
+Both daily and monthly average maximum and minimum temperatures exhibited clear seasonal trends, highlighting the cyclical nature of temperature variations. Daily total precipitation showcased a more episodic pattern, with frequent peaks indicating days of substantial rainfall interspersed with periods of lower precipitation. The correlation matrix revealed a negligible relationship between precipitation and temperature extremes, suggesting independent influences on weather conditions. Distribution plots illustrated the relative stability in temperature data compared to the variability in precipitation, characterized by a skewed distribution with a long tail.
+
+These findings underscore the importance of incorporating seasonal variables and understanding the distinct behavior of temperature and precipitation when developing predictive models. 
+
+For a deeper dive into the code, visualizations, and detailed analysis of each chart, please refer to the 'EDA_visualizations.md' file.
+
+### VI- 
+
 
