@@ -118,4 +118,4 @@ Vertex AI, Google Cloud's comprehensive machine learning platform, streamlines t
 
 As indicated in the image, the model "WeatherModelEndpoint" has been successfully deployed and is now active on Vertex AI.  This signifies that the model is accessible for generating weather predictions, enabling its integration into various applications and services.
 
-![Model Deployed](BigQuery-images/Model-Deployed.png)
+![Model Deployed](BigQuery-images/Deployed-Model.png)
